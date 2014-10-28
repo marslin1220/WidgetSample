@@ -15,6 +15,10 @@
 		A2020A0719FF66E600C47169 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2020A0619FF66E600C47169 /* Images.xcassets */; };
 		A2020A0A19FF66E600C47169 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2020A0819FF66E600C47169 /* LaunchScreen.xib */; };
 		A2020A1619FF66E600C47169 /* WidgetSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2020A1519FF66E600C47169 /* WidgetSampleTests.m */; };
+		A2020A2619FF678200C47169 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2020A2519FF678200C47169 /* NotificationCenter.framework */; };
+		A2020A2C19FF678200C47169 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2020A2B19FF678200C47169 /* TodayViewController.m */; };
+		A2020A2E19FF678200C47169 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2020A2D19FF678200C47169 /* MainInterface.storyboard */; };
+		A2020A3119FF678200C47169 /* HelloToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A2020A2319FF678200C47169 /* HelloToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +29,28 @@
 			remoteGlobalIDString = A20209F219FF66E600C47169;
 			remoteInfo = WidgetSample;
 		};
+		A2020A2F19FF678200C47169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A20209EB19FF66E500C47169 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2020A2219FF678200C47169;
+			remoteInfo = HelloToday;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A2020A3519FF678200C47169 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A2020A3119FF678200C47169 /* HelloToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A20209F319FF66E600C47169 /* WidgetSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WidgetSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +67,12 @@
 		A2020A0F19FF66E600C47169 /* WidgetSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WidgetSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2020A1419FF66E600C47169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2020A1519FF66E600C47169 /* WidgetSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WidgetSampleTests.m; sourceTree = "<group>"; };
+		A2020A2319FF678200C47169 /* HelloToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HelloToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2020A2519FF678200C47169 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		A2020A2919FF678200C47169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2020A2A19FF678200C47169 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		A2020A2B19FF678200C47169 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		A2020A2D19FF678200C47169 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +90,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A2020A2019FF678200C47169 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2020A2619FF678200C47169 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -67,6 +106,8 @@
 			children = (
 				A20209F519FF66E600C47169 /* WidgetSample */,
 				A2020A1219FF66E600C47169 /* WidgetSampleTests */,
+				A2020A2719FF678200C47169 /* HelloToday */,
+				A2020A2419FF678200C47169 /* Frameworks */,
 				A20209F419FF66E600C47169 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,6 +117,7 @@
 			children = (
 				A20209F319FF66E600C47169 /* WidgetSample.app */,
 				A2020A0F19FF66E600C47169 /* WidgetSampleTests.xctest */,
+				A2020A2319FF678200C47169 /* HelloToday.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +164,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A2020A2419FF678200C47169 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2020A2519FF678200C47169 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2020A2719FF678200C47169 /* HelloToday */ = {
+			isa = PBXGroup;
+			children = (
+				A2020A2A19FF678200C47169 /* TodayViewController.h */,
+				A2020A2B19FF678200C47169 /* TodayViewController.m */,
+				A2020A2D19FF678200C47169 /* MainInterface.storyboard */,
+				A2020A2819FF678200C47169 /* Supporting Files */,
+			);
+			path = HelloToday;
+			sourceTree = "<group>";
+		};
+		A2020A2819FF678200C47169 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2020A2919FF678200C47169 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,10 +201,12 @@
 				A20209EF19FF66E600C47169 /* Sources */,
 				A20209F019FF66E600C47169 /* Frameworks */,
 				A20209F119FF66E600C47169 /* Resources */,
+				A2020A3519FF678200C47169 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A2020A3019FF678200C47169 /* PBXTargetDependency */,
 			);
 			name = WidgetSample;
 			productName = WidgetSample;
@@ -160,6 +231,23 @@
 			productReference = A2020A0F19FF66E600C47169 /* WidgetSampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A2020A2219FF678200C47169 /* HelloToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2020A3219FF678200C47169 /* Build configuration list for PBXNativeTarget "HelloToday" */;
+			buildPhases = (
+				A2020A1F19FF678200C47169 /* Sources */,
+				A2020A2019FF678200C47169 /* Frameworks */,
+				A2020A2119FF678200C47169 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloToday;
+			productName = HelloToday;
+			productReference = A2020A2319FF678200C47169 /* HelloToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,6 +263,9 @@
 					A2020A0E19FF66E600C47169 = {
 						CreatedOnToolsVersion = 6.1;
 						TestTargetID = A20209F219FF66E600C47169;
+					};
+					A2020A2219FF678200C47169 = {
+						CreatedOnToolsVersion = 6.1;
 					};
 				};
 			};
@@ -193,6 +284,7 @@
 			targets = (
 				A20209F219FF66E600C47169 /* WidgetSample */,
 				A2020A0E19FF66E600C47169 /* WidgetSampleTests */,
+				A2020A2219FF678200C47169 /* HelloToday */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +304,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2020A2119FF678200C47169 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2020A2E19FF678200C47169 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +337,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A2020A1F19FF678200C47169 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2020A2C19FF678200C47169 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -244,6 +352,11 @@
 			isa = PBXTargetDependency;
 			target = A20209F219FF66E600C47169 /* WidgetSample */;
 			targetProxy = A2020A1019FF66E600C47169 /* PBXContainerItemProxy */;
+		};
+		A2020A3019FF678200C47169 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2020A2219FF678200C47169 /* HelloToday */;
+			targetProxy = A2020A2F19FF678200C47169 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -397,6 +510,30 @@
 			};
 			name = Release;
 		};
+		A2020A3319FF678200C47169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HelloToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A2020A3419FF678200C47169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HelloToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -422,6 +559,14 @@
 			buildConfigurations = (
 				A2020A1D19FF66E600C47169 /* Debug */,
 				A2020A1E19FF66E600C47169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A2020A3219FF678200C47169 /* Build configuration list for PBXNativeTarget "HelloToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2020A3319FF678200C47169 /* Debug */,
+				A2020A3419FF678200C47169 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
